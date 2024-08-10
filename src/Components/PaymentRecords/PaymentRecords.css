@@ -1,0 +1,73 @@
+/* General Container */
+.payment-records-container {
+    padding: 20px;
+    background-color: #FFFFF0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Heading Style */
+.payment-records-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* List Style */
+.payment-records-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.payment-records-container li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #FFFFF0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.payment-records-container li:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Payment Details */
+.payment-records-container li span {
+    display: block;
+    margin: 5px 0;
+}
+
+.payment-records-container li span.amount {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.payment-records-container li span.method {
+    font-style: italic;
+    color: #666;
+}
+
+.payment-records-container li span.date {
+    font-size: 14px;
+    color: #999;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .payment-records-container h2 {
+        font-size: 20px;
+    }
+
+    .payment-records-container li {
+        padding: 8px;
+    }
+
+    .payment-records-container li span {
+        margin: 3px 0;
+    }
+}

@@ -1,0 +1,160 @@
+/* Dashboard.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+  margin-top: 100px;
+}
+
+.sidebars {
+  width: 240px;
+  background-color: #333;
+  color: #fff;
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebars h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebars .dropdown {
+  width: 100%;
+}
+
+.sidebars .dropbtn {
+  background-color: #444;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebars .dropdown-content {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #555;
+  position: relative;
+  z-index: 1;
+}
+
+.sidebars .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.sidebars .dropdown-content a:hover {
+  background-color: #666;
+}
+
+.sidebars .dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.sidebars .dropdown:hover .dropbtn {
+  background-color: #555;
+}
+
+.main-content {
+  margin-left: 240px;
+  padding: 20px;
+  width: calc(100% - 240px);
+}
+
+h2.h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.edit-button {
+  background-color: #28a745;
+  color: white;
+}
+
+button.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.assign-button {
+  background-color: #17a2b8;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.edit-form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.edit-form input {
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-form button {
+  margin-right: 10px;
+}
+

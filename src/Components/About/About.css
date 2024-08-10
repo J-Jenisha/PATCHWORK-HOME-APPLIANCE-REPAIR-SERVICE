@@ -1,0 +1,562 @@
+/* Global reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.carousel .slide img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel .legend {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Container for the entire page content */
+.body-container {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Slider container */
+.body-div {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Center content vertically if needed */
+}
+
+/* Semi-transparent overlay */
+.transparent-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(84, 59, 59, 0.5);
+    z-index: 1;
+}
+
+/* Image styling to ensure full container coverage */
+.body-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    display: block; /* Ensures the image is treated as a block element */
+}
+
+/* Overlay text styling */
+.text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: black;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.text-overlay h1 {
+    margin-bottom: 20px;
+    font-size: 52px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+.text-overlay p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    color:#fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2px;
+}
+
+/* Form overlay styling */
+.form-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+.body-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    display: block;
+}
+
+.form-groups button:hover {
+    background-color: #fff;
+    color: rgb(255, 128, 0);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.column {
+    float: left;
+    width: 50%; 
+    padding: 10px;
+    position: relative; 
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column h2 {
+    color: rgb(206, 182, 22);
+    padding-top: 80px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.column h1 {
+    color: black;
+    font-size: 29px;
+}
+
+.column img {
+    width: 400px; 
+    height: 400px; 
+    display: block; 
+    padding-top: 40px;
+    margin-left: 150px;
+}
+
+.column p {
+    margin-top: 30px;
+}
+
+.about-img {
+  max-height: 400px; /* Adjust the max-height as needed */
+  width: auto; /* Automatically adjust width to maintain aspect ratio */
+  margin-bottom: 60px;
+}
+
+
+
+.specific_list {
+    background-color: #8f5856;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 40px 280px 100px;
+    height: 80px;
+    
+}
+
+.specific_list ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.specific_list ul li {
+    border-right: 2px solid #fff;
+    padding: 0 25px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.specific_list li {
+    display: flex;
+    align-items: center;
+}
+.specific_list img {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+ul {
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    
+        vertical-align: middle;
+        border-style: none;
+    
+}
+
+
+  
+.service-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.service-column {
+    float: left;
+    width: 25%;
+    margin-top: 20px; /* Reduce top margin if needed */
+    margin-bottom: 20px; /* Reduce bottom margin if needed */
+    padding: 0 10px; /* Adjust side padding to reduce space */
+}
+
+.service-column img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px; 
+    padding-block: 2px;/* Adjust as needed to reduce space */
+    /* Remove or reduce any additional padding or margin */
+}
+
+/* Optional: reduce the row and column gap further */
+.service-row {
+    
+    row-gap: 2px; /* Adjust as needed */
+    column-gap: 2px; /* Adjust as needed */
+}
+
+.service-row h1 {
+    margin-bottom: 40px;
+    margin-left:450px;
+}
+
+
+.brand h1 {
+    margin-left: 100px;
+    margin-top: 100px;
+    color: rgb(206, 182, 22);
+    font-size: 20px;
+}
+
+.brand h2 {
+    margin-left: 99px;
+    font-size: 24px;
+    margin-top: 30px;
+    font-family: "Jost";
+    padding-bottom: 30px;
+    
+}
+.brand p{
+    margin-left: 100px;
+}
+
+
+/* Centered text block */
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.center h2 {
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-top: 200px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.center p {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home-third{
+    margin: 0;
+}
+
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF; /* Change background color as needed */
+    padding: 20px;
+    border-radius: 8px; /* Optional: for rounded corners */
+  }
+  
+  .contact-item {
+    flex: 1;
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center;
+    position: relative;
+  }
+  
+  .contact-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #FFFFFF; /* Change line color as needed */
+  }
+  
+  .contact-number {
+    font-size: 1.8em;
+    font-weight: 600;
+    color:crimson;
+    margin-bottom: 10px; /* Space between number and description */
+  }
+  
+  .contact-description {
+    font-size: 1.4em;
+    color: #8f5856; /* Change text color as needed */
+  }
+  
+  .service-container {
+    background-image: url('https://apelectricinc.com/wp-content/uploads/2019/02/AP-ELECTRIC-TITLE-IMAGE.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 50px;
+  }
+  
+  .service-intro {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the paragraph */
+    padding: 20px;
+    margin-top: 120px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for shadow effect */
+  }
+  .service-intro h3{
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    white-space: nowrap;
+    overflow: hidden;
+    color:grey;
+    text-overflow: ellipsis;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .service-intro p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 040;
+    line-height: 28px;
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(79, 79, 79);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2px;
+  }
+  
+  .service-items {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between items */
+    margin-top: 70px;
+  }
+  
+  .service-item {
+    background-color: #FFFFFF; /* Semi-transparent background */
+    padding-top: 80px;
+    padding: 80px;
+    padding-left: 100px;
+    margin: 0 40px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for shadow effect */
+    text-align: center;
+    flex: 1; /* Allow items to grow and shrink equally */
+    min-width: 0; /* Ensure items do not overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-item:hover {
+    transform: translateY(-10px); /* Lift the item slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    
+    
+  }
+  .service-itemss
+  {
+    background-color: rgb(79, 79, 79); /* Semi-transparent background */
+    padding-top: 100px;
+    padding: 80px;
+    padding-left: 100px;
+    margin: 0 40px;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for shadow effect */
+    text-align: center;
+    flex: 1; 
+    min-width: 0; /* Ensure items do not overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-itemss:hover {
+    transform: translateY(-10px); /* Lift the item slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    
+  }
+  .service-title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 900;
+    color: #8f5856;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2px;
+    
+  }
+
+  .service-title:hover{
+    color: #000000;
+  }
+  .service-titles {
+    font-size: 24px;
+    font-weight: 900;
+    color: #8f5856;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2px;
+    
+  }
+  
+  .service-description {
+    font-size: 1em;
+    font-weight: 100;
+    color: #000000; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+  }
+  .service-descriptions {
+    font-size: 1.2em;
+    font-weight: 200;
+    color: #FFFFFF; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+  }
+
+
+  .home-second {
+    padding: 50px 20px;
+    background-color: #FFFFFF; /* Light background color */
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .column img {
+    width: 100%; /* Ensure image fits its container */
+    border-radius: 8px; /* Optional: rounded corners for image */
+    margin-left: 30px;
+  }
+  
+  h1, h2 {
+    margin: 0;
+    color: #8f5856; /* Dark text color for headers */
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+  }
+  
+  .point-list {
+    margin-top: 40px;
+    margin-left: 40px;
+
+  }
+  
+  .point-item {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-bottom: 24px;
+    padding: 10px;
+    background-color: #fff; /* White background for each point */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for visual depth */
+  }
+ 
+  .point-icon {
+    font-size: 1.5em;
+    color: #4CAF50; /* Green color for the check icon */
+    margin-right: 15px;
+    flex-shrink: 0; /* Ensure icon does not shrink */
+  }
+  
+  .point-text {
+    font-size: 1.2em;
+    color: #555; /* Darker text color for readability */
+  }
+  

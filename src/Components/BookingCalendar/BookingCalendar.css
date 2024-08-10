@@ -1,0 +1,78 @@
+#calendar {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 180px;
+}
+
+#calendar table {
+    width: 100%;
+    border-collapse: collapse;
+  
+}
+
+#calendar th, #calendar td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 30px ;
+   
+
+    cursor: pointer;
+}
+
+#calendar th {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    
+}
+
+#calendar td:hover {
+    background-color: #f9f9f9;
+}
+
+#calendar td:active {
+    background-color: #ffffff;
+}
+
+#calendar td.selected {
+    background-color: #f4a742;
+    color: white;
+    font-weight: bold;
+}
+
+#calendar td.inactive {
+    color: #ccc;
+    pointer-events: none;
+}
+
+/* BookingCalendar.css */
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .arrow {
+    cursor: pointer;
+    font-size: 1.5rem;
+    user-select: none; /* Prevent text selection */
+  }
+  
+  .arrow:hover {
+    color: #007bff;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    align-items: center;
+    margin: 0;
+  }
+  

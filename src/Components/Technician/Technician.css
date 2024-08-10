@@ -1,0 +1,51 @@
+/* TechnicianDetails.css */
+
+/* Main container for the technician details */
+.technician-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFF0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .technician-details h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .technician-details p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .technician-details .status {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #007bff; /* Blue color for the status */
+  }
+  
+  .technician-details button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745; /* Green color for the button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .technician-details button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .technician-details .loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #007bff; /* Blue color for loading message */
+  }
+  

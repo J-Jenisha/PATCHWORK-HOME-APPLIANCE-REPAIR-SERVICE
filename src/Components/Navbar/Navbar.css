@@ -1,0 +1,213 @@
+/* General Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: grey;
+    --mainColorLight: #5767aa;
+    --secondaryColor: #db2b39;
+    --textColor: black;
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+    padding: 0 2rem; /* Padding inside the header */
+    background-color: white;
+    color: var(--textColor);
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+    position: fixed; /* Keep it fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+header img {
+    width: 110px;
+    height: 110px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push nav to the right */
+}
+
+nav a {
+    margin: 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--secondaryColor);
+}
+
+header .nav-btn {
+    padding: 2px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 0.1rem;
+    text-decoration: none;
+    margin-right: 100px;
+}
+
+a:hover {
+    color: black;
+}
+
+.book-now-btn {
+    margin-left: auto; /* Push login button to the right */
+}
+
+.book-now-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #021832;
+    border: 1px solid #021832;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.book-now-btn a:hover {
+    background: #805738;
+    text-decoration: none;
+    color: white;
+}
+
+.admin-icon {
+    margin-left: 20px; /* Space between the login button and admin icon */
+}
+
+.admin-icon img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.admin-icon a {
+    color: #021832;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.admin-icon a:hover {
+    opacity: 0.7;
+}
+
+.profile-menu {
+    position: relative;
+    margin-left: 20px;
+}
+
+.profile-icon {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #333;
+}
+
+.profile-icon:hover {
+    color: #007bff;
+}
+
+.dropdown-menu {
+    position: fixed; /* Make the dropdown fixed */
+    top: 110px; /* Position it below the header */
+    right: 20px; /* Align to the right edge of the screen */
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1001;
+    min-width: 180px;
+}
+
+/* User Email Display */
+.user-email {
+    font-size: 16px;
+    color: #555;
+    padding: 5px 0;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 10px;
+}
+
+/* Dropdown Menu Items */
+.dropdown-item {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f7f7f7;
+}
+
+.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 1024px) {
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--mainColor);
+        transition: transform 0.3s ease;
+        transform: translateY(-100vh); /* Hide by default */
+    }
+
+    header .responsive_nav {
+        transform: translateY(0); /* Show when active */
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    header img {
+        width: 100px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .book-now-btn {
+        margin-left: 0;
+    }
+}

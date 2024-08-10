@@ -1,0 +1,892 @@
+/* Global reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the entire page content */
+.body-container {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  overflow-x: hidden; 
+}
+
+
+.body-div {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  margin-top: 100px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Center content vertically if needed */
+}
+
+/* Semi-transparent overlay */
+.transparent-layers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(84, 59, 59, 0.422);
+  z-index: 1;
+}
+
+
+.body-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  display: block; 
+}
+
+
+.text-overlay {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  color: black;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.text-overlay h1 {
+  margin-bottom: 20px;
+  font-size: 52px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #FFFFFF;
+  text-overflow: ellipsis;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+.text-overlay p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-top: 30px;
+  text-align: center;
+  color:#FFFFFF;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+
+
+
+/* Column and row styling */
+.column {
+  float: left;
+  width: 50%; /* Adjust width as needed */
+  padding: 10px;
+  position: relative; /* Ensure child positioning is relative to this column */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column h2 {
+  color: rgb(206, 182, 22);
+  padding-top: 80px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.column h1 {
+  color: black;
+  font-size: 29px;
+}
+
+.column img {
+  width: 500px; /* Ensure full width of container */
+  height: 500px; /* Maintain aspect ratio */
+  display: block; /* Ensure images are block elements */
+  padding-top: 70px;
+  margin-left: 150px;
+}
+
+.column p {
+  margin-top: 30px;
+}
+
+.specific_list {
+  background-color: #23158f;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 40px 280px 100px;
+  height: 80px;
+  
+}
+
+.specific_list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.specific_list ul li {
+  border-right: 2px solid #FFFFFF;
+  padding: 0 25px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.specific_list li {
+  display: flex;
+  align-items: center;
+}
+.specific_list img {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+ul {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  unicode-bidi: isolate;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+  vertical-align: middle;
+  border-style: none;
+}
+
+
+
+.service-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.service-column {
+  float: left;
+  width: 25%;
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  padding: 0 10px; 
+}
+
+.service-column img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px; 
+  padding-block: 2px;
+  
+}
+
+
+.service-row {
+  
+  row-gap: 2px; 
+  column-gap: 2px; 
+}
+
+.service-row h1 {
+  margin-bottom: 40px;
+  margin-left:450px;
+}
+
+
+.brand h1 {
+  margin-left: 100px;
+  margin-top: 100px;
+  color: rgb(206, 182, 22);
+  font-size: 20px;
+}
+
+.brand h2 {
+  margin-left: 99px;
+  font-size: 24px;
+  margin-top: 30px;
+  font-family: "Jost";
+  padding-bottom: 30px;
+  
+}
+.brand p{
+  margin-left: 100px;
+}
+
+
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.center h2 {
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin-top: 200px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.center p {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home-third{
+  margin: 0;
+}
+
+
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF; /* Change background color as needed */
+  padding: 20px;
+  border-radius: 8px; /* Optional: for rounded corners */
+}
+
+.contact-item {
+  flex: 1;
+  padding: 20px; /* Adjust padding as needed */
+  text-align: center;
+  position: relative;
+}
+
+.contact-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #FFFFFF; /* Change line color as needed */
+}
+
+.contact-number {
+  font-size: 1.8em;
+  font-weight: 600;
+  color:crimson;
+  margin-bottom: 10px; /* Space between number and description */
+}
+
+.contact-description {
+  font-size: 1.4em;
+  color:#8f5856; /* Change text color as needed */
+}
+
+.service-container {
+  background-image: url('https://apelectricinc.com/wp-content/uploads/2019/02/AP-ELECTRIC-TITLE-IMAGE.jpg'); 
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 50px;
+}
+
+.service-intro {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the paragraph */
+  padding: 20px;
+  margin-top: 120px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for shadow effect */
+}
+.service-intro h3{
+  margin-bottom: 20px;
+  margin-top: 0px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  color:grey;
+  text-overflow: ellipsis;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+.service-intro p {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 040;
+  line-height: 28px;
+  margin-top: 30px;
+  text-align: center;
+  color: rgb(79, 79, 79);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.service-items {
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly between items */
+  margin-top: 70px;
+}
+
+.service-item {
+  background-color: #FFFFFF; /* Semi-transparent background */
+  padding-top: 80px;
+  padding: 80px;
+  padding-left: 100px;
+  margin: 0 40px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  border-radius: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for shadow effect */
+  text-align: center;
+  flex: 1; /* Allow items to grow and shrink equally */
+  min-width: 0; /* Ensure items do not overflow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px); /* Lift the item slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  
+  
+}
+.service-itemss
+{
+  background-color: rgb(79, 79, 79); /* Semi-transparent background */
+  padding-top: 100px;
+  padding: 80px;
+  padding-left: 100px;
+  margin: 0 40px;
+  margin-top: 60px;
+  margin-bottom: 120px;
+  border-radius: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for shadow effect */
+  text-align: center;
+  flex: 1; 
+  min-width: 0; /* Ensure items do not overflow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-itemss:hover {
+  transform: translateY(-10px); /* Lift the item slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  
+}
+.service-title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 900;
+  color: #8f5856;
+  margin-bottom: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 0.2px;
+  
+}
+
+.service-title:hover{
+  color: #000000;
+}
+.service-titles {
+  font-size: 24px;
+  font-weight: 900;
+  color: #8f5856;
+  margin-bottom: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 0.2px;
+  
+}
+
+.service-description {
+  font-size: 1em;
+  font-weight: 100;
+  color: #000000; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 1.5px;
+}
+.service-descriptions {
+  font-size: 1.2em;
+  font-weight: 200;
+  color: #fff; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+
+.home-second {
+  padding: 50px 20px;
+  background-color: #FFFFFF; /* Light background color */
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  padding: 50px;
+}
+
+.column img {
+  width: 100%; 
+  border-radius: 8px;
+  margin-left: 30px;
+}
+
+h1, h2 {
+  margin: 0;
+  color: #333; /* Dark text color for headers */
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.point-list {
+  margin-top: 40px;
+  margin-left: 40px;
+
+}
+
+.point-item {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5px;
+  margin-bottom: 24px;
+  padding: 10px;
+  background-color: #FFFFFF; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.point-icon {
+  font-size: 1.5em;
+  color: #4CAF50; 
+  margin-right: 15px;
+  flex-shrink: 0; 
+}
+
+.point-text {
+  font-size: 1.2em;
+  color: #555;
+}
+
+
+.offerings-section {
+  padding: 20px;
+  color:rgba(111, 86, 86, 0.194);
+}
+
+.offerings-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+ 
+}
+
+.offerings-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.offering-container {
+  /* border: 1px solid #ccc; */
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  background:rgba(111, 86, 86, 0.194);
+  width: 30%;
+}
+
+.offering-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.offering-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(71, 8, 8);
+  font-size: 24px;
+}
+
+
+.service-info-container {
+background-color: rgba(111, 86, 86, 0.194);
+padding: 50px;
+border-radius: 8px;
+margin: 20px auto;
+max-width: 1500px;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-info-heading {
+font-size: 2.5rem;
+color: #333;
+margin-bottom: 15px;
+font-family: 'Arial', sans-serif;
+}
+
+.service-info-paragraph {
+font-size: 1.2rem;
+color: #666;
+line-height: 1.6;
+font-family: 'Georgia', serif;
+}
+
+
+.service-highlights {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  width: 100%; /* Adjusted to full width for better responsiveness */
+  margin-top: 70px;
+  /* Removed margin-left to center the section */
+  flex-wrap: wrap; /* Allows wrapping of cards on smaller screens */
+}
+
+.highlight {
+  background-color: #FFFFFF; /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for card effect */
+  padding: 20px; /* Padding inside the card */
+  text-align: center;
+  margin: 20px; /* Margin around the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  flex: 1 1 calc(33.333% - 40px); /* Adjust width for three cards per row with space between */
+}
+
+.highlight img {
+  max-width: 40px; /* Adjust image size */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.highlight h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px; /* Space between heading and paragraph */
+}
+
+.highlight p {
+  font-size: 1em;
+  color: #666; /* Darker text color for readability */
+}
+
+.highlight:hover {
+  transform: translateY(-5px); /* Lift the card slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+
+/* src/components/StatsSection.css */
+.stats-section {
+  /* Same as the orange background in the image */
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+
+}
+
+.container10:after {
+  background:  url(https://themescare.com/demos/view-felona/assets/img/about-section.png) no-repeat scroll 0px -85px;
+  z-index: -1;
+  position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container10 {
+  max-width: 2000px;
+  background-color: 	#23158f;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto; /* centers the container horizontally */
+  padding-left: 20px; /* adjusts padding on the left */
+  width: 100%; 
+  height: 450px;
+}
+
+
+.container10 h2 {
+  font-size: 36px;
+  margin-top: 40px;
+  color: #FFFFFF;
+}
+
+.container10 h3 {
+  font-size: 24px;
+  margin-top: 30px;
+  color: #FFFFFF;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  width: 1300px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+
+.stat {
+  background: #FFFFFF;
+  color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.number {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.repair-services {
+  /* Your existing styles */
+  text-align: center; /* Center align text */
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+.repair-services h4 {
+  color: #8f5856;
+  font-size: 18px;
+  padding-top: 40px;
+
+}
+
+.repair-services h2 {
+  color: black;
+
+  padding-top: 20px;
+  
+  font-family: 'Ubuntu', sans-serif;
+ 
+    text-transform: capitalize;
+    font-size: 35px;
+    margin: 15px 0;
+    position: relative;
+  
+
+}
+
+.repair1 h2 {
+  color: black;
+
+  padding-top: 20px;
+  padding-right: 620px;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 15px 0;
+}
+
+.repair-services h3 {
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  color: #8f5856;
+  font-weight: 700;
+  padding: 5px 0 5px 20px;
+  border-left: 1px solid #8f5856;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 900px;
+}
+
+
+.details-button {
+ 
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 35px;
+    border: 2px solid #000000;
+    letter-spacing: 1px;
+  
+}
+
+.details-button:hover {
+  background-color: #ffffff; /* Orange background on hover */
+  color: #000000; /* White text on hover */
+}
+
+/* Service.css */
+.details-button::after {
+  content: ' \003E\003E'; /* Adds the section symbol after the button text */
+}
+
+.search-bar {
+  width: 80%; /* Adjust width as needed */
+  max-width: 500px; /* Maximum width for larger screens */
+  padding: 10px; /* Padding inside the input */
+  margin: 20px auto; /* Center the input horizontally and add margin above and below */
+  border: 1px solid black; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  display: block; /* Ensure it takes full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.card-container  {
+width: 1400px;
+gap: 10px;
+margin-left: 100px;
+display: flex;
+flex-wrap: wrap; /* Allows wrapping of items to the next row */
+gap: 40px 2px; 
+border-radius: 1px;
+display: flex; 
+
+}
+.card {
+  background-color: #FFFFFF; /* White background for cards */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 0px; /* Rounded corners */
+  overflow: hidden; /* Hide overflowing content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+ 
+  text-align: center; /* Center align text */
+ gap: 10px 20px;
+  display: flex; /* Flexbox layout for content alignment */
+  flex-direction: column; /* Column direction for child elements */
+  justify-content: space-between; /* Space between elements */
+}
+
+
+
+
+.quote-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+.quote-form {
+  width: 60%;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote-form h2 {
+  color: #23158f;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.quote-form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card-container img{
+  border-radius: 0;
+}
+/* Updated class name */
+.quote-form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.quote-form-group input,
+.quote-form-group select,
+.quote-form-group textarea {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+.quote-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #23158fd4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quote-button:hover {
+  background-color: #23158f;
+}
+
+.quote-image {
+  width: 35%;
+  text-align: center;
+}
+
+.quote-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+

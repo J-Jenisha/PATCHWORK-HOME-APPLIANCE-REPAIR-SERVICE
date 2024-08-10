@@ -1,0 +1,217 @@
+.signup-page-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+  background-image: url("../Images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+  padding: 200px;
+  margin: 0;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 400px; /* Ensure this is wide enough */
+  height: 560px;
+  max-height: 300%;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 20px;
+  margin-top: 119px;
+  background-color: #23181490;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+.signup-inputs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%; /* Ensure full width of the container */
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 100%; /* Ensure input field takes full width */
+  box-sizing: border-box;
+}
+
+.input-field img {
+  margin-right: 8px;
+}
+
+.input-field input {
+  width: 100%; /* Ensure the input field takes the full width */
+  border: none;
+  outline: none;
+  color: #666;
+  font-size: 0.875rem;
+  padding: 12px; /* Increase padding for a better look */
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.signup-submit-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.signup-submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 180px;
+  height: 45px;
+  background: #333;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.signup-submit-button:hover {
+  background-color: white;
+  color: #333;
+}
+
+.signup-title {
+  
+    color: white; /* Softer black */
+    font-size: 2rem; /* Slightly smaller font size */
+    font-weight: 700;
+    padding-bottom: 13px;
+
+}
+
+
+.header-underline {
+  width: 70px; /* Reduced width */
+  height: 4px; /* Reduced height */
+  background: white; /* Softer black */
+  border-radius: 5px; /* Reduced border-radius */
+  padding-top: 1px;
+  margin-left: 143px;
+}
+
+.signup-divider {
+  margin: 20px 0;
+  font-size: 0.875rem;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.signup-divider::before,
+.signup-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.signup-divider::before {
+  left: 0;
+}
+
+.signup-divider::after {
+  right: 0;
+}
+
+.signup-footer {
+  margin-top: 20px;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #333;
+}
+
+.signup-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Existing styles... */
+
+.signup-inputs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 8px 0 0 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 87%;
+  margin-left: 12px;
+}
+
+.input-field img {
+  margin-right: 8px;
+}
+
+.input-field input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #666;
+  font-size: 0.875rem;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Additional styling for the new input fields */
+
+.input-field img {
+  margin-right: 8px;
+}
+
+/* You can add specific styles for the mobile number input field if needed */
+.input-field input[type="tel"] {
+  /* Custom styles for phone number input, if any */
+}
+
+.signup-already {
+  color: #999; /* Change this to your desired color for the "Don't have an account?" text */
+  font-size: 0.875rem; /* Optional: Adjust font size if needed */
+}
+
+.signup-login{
+  color:#007bff ;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.signup-footer-separator {
+  color: orangered; /* Set the desired color for the separator */
+  font-size: 1rem; /* Adjust size if needed */
+}

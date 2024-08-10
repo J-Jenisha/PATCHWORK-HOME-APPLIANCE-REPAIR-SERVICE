@@ -1,0 +1,98 @@
+.blog {
+    max-width: 1200px; /* Set a max-width for your content */
+    margin: 0 auto; /* Center the blog content */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #FFFFFF;
+}
+  
+
+.blog-header {
+    text-align: center; /* Center the header text */
+    margin-bottom: 5px; /* Space below the header */
+    font-size: 3em; /* Adjust the font size */
+    font-weight: bold;
+    COLOR:#000000; /* Make the font bold */
+    padding-top: 120px; /* Space above the header */
+    
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 10px; /* Space between grid items */
+    margin-top: 100px;
+  }
+  
+  .image-container {
+    text-align: center; /* Center text */
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+ 
+  .image-container img {
+    width: 248px; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .image-container h1 {
+    margin-top: 10px; /* Space between image and text */
+    font-size: 1.1rem; /* Adjust font size as needed */
+    color: #000000;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+   padding-left: 30px;
+   margin-top: 30px;
+  }
+
+  .image-container .blog-1 {
+    color: #1E4060;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+   
+    margin-top: 30px;
+    padding-bottom: 15px; 
+    position: relative;
+  }
+  
+  .image-container .blog-1 ::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 3px; /* Thickness of the line */
+    background-color: #B2C7E0; /* Color of the line */
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 150px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .image-container .blog-2 {
+    color: #1E4060;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px; /* Reduced font size */
+    margin-top: 10px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 30px;
+  }
+ 
+  .read-more {
+    display: inline-block;
+    margin-top: 13px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #000000; /* Button color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more:hover {
+    background-color: #d7d7c4;
+    color: #000000;
+    text-decoration: none; /* Darker shade on hover */
+  }

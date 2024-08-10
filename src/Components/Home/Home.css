@@ -1,0 +1,810 @@
+/* Global reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+
+.home-container {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+
+.body-div {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+.transparent-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(84, 59, 59, 0.5);
+    z-index: 1;
+}
+
+
+.body-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    display: block;
+}
+
+
+.text-overlay-home {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: black;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+}
+
+
+.text-overlay-home h1 {
+    margin-bottom: 10px;
+    font-size: 52px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+        color: rgb(0, 0, 0); /* Change this to the color you want */
+        font-size: 2.5rem;
+        margin-right: 650px;
+    
+}
+
+.text-overlay-home p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2px;
+    margin-right: 550px;
+}
+
+.charge {
+    color: rgb(35, 26, 161);
+}
+
+
+.more{
+    text-decoration: none;
+    color:#FF7518;
+
+}
+.form-group button {
+    width: 150px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #000000db;
+    border: none;
+    border-radius: 4px;
+    margin-right:680px;
+    margin-left: 0px;
+    margin-top: 80px;
+    color: #FFFFF0;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #d7d7c4;
+    color: #000000;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.form-btn {
+    margin-top: 28px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column h2 {
+    color: rgb(206, 182, 22);
+    padding-top: 80px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.column h1 {
+    color: black;
+    font-size: 29px;
+}
+
+.columns img {
+    width: 500px;
+    height: 500px;
+    display: block;
+    padding-top: 70px;
+    margin-left: 200px;
+
+}
+
+.column p {
+    margin-top: 30px;
+}
+
+.specific_list {
+    background-color: #23158f;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 40px auto 100px;
+    height: 80px;
+    max-width: 1000px;
+    overflow: hidden;
+    margin-right: 1000px; 
+    position: relative;/* Adjust this value as needed */
+    left: 70px;
+}
+
+
+.specific_list ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.specific_list ul li {
+    border-right: 2px solid #fff;
+    padding: 0 25px;
+    font-size: 18px;
+    color: #FFFFFf;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.specific_list img {
+    margin-right: 10px;
+}
+
+/* Removing margin and padding for list elements */
+ul, li {
+    margin: 0;
+    padding: 200px;
+    list-style: none;
+}
+
+/* Service columns */
+.service-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.service-column {
+    float: left;
+    width: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.service-column img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    padding-block: 2px;
+}
+
+.service-column {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+}
+
+.service-column:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.home-third h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.brand h1 {
+    margin-left: 100px;
+    margin-top: 100px;
+    color: rgb(206, 182, 22);
+    font-size: 20px;
+}
+
+.brand h2 {
+    margin-left: 99px;
+    font-size: 24px;
+    margin-top: 30px;
+    font-family: "Jost";
+    padding-bottom: 30px;
+}
+
+.brand p {
+    margin-left: 100px;
+}
+
+.brand1 {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.brand1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    display: block;
+}
+
+.brands {
+    position: relative;
+}
+
+.brand {
+    position: relative;
+    overflow: hidden;
+}
+
+.brand::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.brand img {
+    position: relative; /* Position relative so that text appears above the image */
+    z-index: 0; /* Ensure image is below the overlay */
+}
+
+.brand h1, .brand h2, .brand p {
+    position: relative; /* Ensure text appears above the overlay */
+    color: #fff; /* Change text color to ensure it stands out against the overlay */
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+.brand2 h1 {
+    color: black;
+    margin-left: 550px;
+    margin-top: 100px;
+    font-family: "Jost";
+    font-size: 30px;
+}
+
+.brand2 h2 {
+    margin-left: 150px;
+    font-family: "Jost";
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.brand2 p {
+    margin-left: 150px;
+    margin-top: 30px;
+    color: black;
+    font-size: 20px;
+    font-family: "Jost";
+}
+
+
+.brand__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.brand__list li {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    list-style: none;
+    background-color: transparent; 
+    transition: none; 
+}
+
+
+.brand_name {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px; 
+}
+
+
+.sliders-partner {
+    overflow: hidden; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.resources h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+    color: black;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.column {
+    flex: 1 1 45%; 
+    max-width: 45%;
+    
+}
+
+.column img {
+    width: 1000px; 
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.resources {
+    text-align: center;
+    
+}
+
+.resource-image h4 {
+    margin-left: 25px;
+}
+
+@media (max-width: 200px) {
+    .column {
+        flex: 1 1 100%; 
+        max-width: 1000px;
+    }
+}
+
+
+.home-fourth h1 {
+    color: black;
+    padding-bottom: 100px;
+    margin-top: 200px;
+    font-size: 30px;
+}
+  
+  
+.row:after {
+    
+    content: "";
+    display: table;
+    clear: both;
+  }
+.column img{
+    width: 700px;
+    height: 200px;
+}
+
+.resource-image img {
+    width: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    padding: 90px;
+}
+
+.card {
+    background: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(29% - 10px); 
+    max-width: calc(29% - 10px); 
+    box-sizing: border-box;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.card p {
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 17px;
+}
+.card img {
+    width: 100%;  
+    height: 320px;  
+    object-fit: cover;  
+}
+
+.card h2 {
+    margin: 20px 0 10px;
+    font-size: 20px;
+    color: #002554;
+    margin-left: 9px;
+}
+
+.card h6 {
+    color: black;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center;
+    }
+
+    .card {
+        flex: 1 1 100%; /* Cards take full width on smaller screens */
+        max-width: 100%;
+    }
+}
+
+.card h6 {
+
+    color: #8f5856;
+}
+
+.continue img {
+    width: 30px;
+    height: 30px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+.no-scroll {
+    overflow-y: hidden;
+    height:100vh;
+}
+.container-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+}    
+.testimonial {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+    color: #333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #23158f;
+    height:500px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    margin-left: 230px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+     box-sizing: border-box;
+     position: relative;
+}
+
+.testimonial-card .testimonial-text,
+.testimonial-card .slick-list,
+.testimonial-card .slick-slide {
+    overflow: hidden;
+    color: white; /* Ensure no overflow */
+}
+
+  html, body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+  .testimonial-card .testimonial-text {
+    max-height: 100px; /* Adjust to fit your design */
+    overflow: hidden; /* Hide overflow if text is too long */
+    text-overflow: ellipsis; /* Show ellipsis if text overflows */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits the number of lines */
+    -webkit-box-orient: vertical;
+    box-sizing: border-box;
+  }
+
+/* Specific handling for sliders */
+.testimonial-card .slick-list {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide overflow from slider */
+}
+.testimonial-content {
+    margin-bottom: 20px;
+}
+
+.rating {
+    font-size: 1.5em;
+    color: #ffcc00;
+}
+
+.testimonial-text {
+    font-size: 1em;
+    margin: 10px 0;
+    max-height: 150px; /* Adjust to fit your design */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Number of lines before truncating */
+    -webkit-box-orient: vertical;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-author .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contactt-info {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 90px;
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.testimonial-card::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.testimonial-card {
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for IE and Edge */
+.testimonial-card {
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Additional container styles */
+.testimonial-container {
+    overflow: hidden; /* Prevent overflow in the container */
+}
+
+/* Ensure the card itself does not cause overflow */
+.testimonial-card {
+    overflow: hidden; /* Prevent any scrollbar from appearing */
+    max-height: 500px; /* Adjust as needed */
+    box-sizing: border-box; /* Ensure padding and borders are included in the height */
+}
+
+
+.contactt-info h2 {
+    margin: 0;
+    color: #23158f;
+}
+
+.booking-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px ;
+    background-color: #FFFFFF;
+    
+    margin-right: 207px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 500px;
+}
+
+.booking-form h2 {
+    margin-bottom: 10px;
+}
+
+.booking-form p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form button {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Define the blinking animation */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply the blinking effect to the button */
+.booking-form button {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #23158fe0;
+    color: white;
+    cursor: pointer;
+    animation: blink 1.5s infinite; /* Apply blinking effect */
+}
+
+.booking-form button:hover {
+    background-color: #23158f;
+}
+
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.center h2 {
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-top: 200px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.center p {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home-third {
+    margin: 0;
+}
+.home-third .serve {
+   text-align: center;
+   margin-right: 300px;
+}
+.home-second p {
+    font-size: 18px;
+    font-family: "Jost";
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+/* For WebKit browsers (Chrome, Safari, etc.) */
+.container-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* For Firefox */
+  .container-scroll {
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  /* General styles to hide the scrollbar but keep the scrolling functionality */
+  .container-scroll {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    overflow: -moz-scrollbars-none; /* For Firefox (older versions) */
+  }
+  
+
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.slick-track::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.slick-track {
+    scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.slick-track {
+    -ms-overflow-style: none;
+}
+
+/* Additional styles to prevent scrollbars */
+.slick-slide {
+    overflow: hidden;
+}
+
+.slick-track {
+    width: auto; /* Adjust width to fit content */
+}
+
+.slick-slide {
+    width: auto; /* Ensure width is correctly set */
+}
+.slick-slider {
+    overflow: hidden;
+}
+
+.slick-track {
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+.slick-slide {
+    overflow: hidden; /* Ensures content does not cause overflow */
+}
+

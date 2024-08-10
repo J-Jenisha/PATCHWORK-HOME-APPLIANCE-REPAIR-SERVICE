@@ -1,0 +1,232 @@
+.no-scroll {
+  overflow-y: hidden;
+  height: 100vh; /* Ensure the height covers the full viewport */
+}
+
+.login-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98vh; /* Ensure full viewport height */
+  background-image: url("../Images/bg.jpg");
+  background-size: cover; /* Ensure the image covers the container */
+  background-position: center;
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%; 
+  max-width: 380px; 
+  height: 500px; 
+  max-height: 100vh; 
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.5); 
+  background-color: #23181490; 
+  backdrop-filter: blur(10px); 
+  padding: 20px;
+  border-radius: 10px; 
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 120px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Slightly increased gap */
+  width: 100%;
+}
+
+.texty {
+  color: white; /* Softer black */
+  font-size: 2rem; /* Slightly smaller font size */
+  font-weight: 700;
+}
+
+.underline {
+  width: 50px; /* Reduced width */
+  height: 4px; /* Reduced height */
+  background: white; /* Softer black */
+  border-radius: 5px; /* Reduced border-radius */
+}
+
+.inputs {
+  margin-top: 20px; /* Reduced margin */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Slightly reduced gap */
+  width: 100%;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd; /* Lighter border */
+  padding: 8px; /* Reduced padding */
+  border-radius: 4px; /* Reduced border-radius */
+  background-color: #fff;
+  width: 100%;
+}
+
+.input img {
+  margin-right: 8px; /* Reduced margin */
+}
+
+.input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #666; /* Softer text color */
+  font-size: 0.875rem; /* Reduced font size */
+  padding: 8px; /* Reduced padding */
+  border-radius: 4px; /* Reduced border-radius */
+}
+
+.forgot-password {
+  width: 100%;
+  text-align: center;
+  color: white; /* Changed to a more professional blue */
+  font-size: 0.875rem; /* Reduced font size */
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.forgot-password span {
+  color: white; /* Softer black */
+  text-decoration: none;
+}
+
+.forgot-password span:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* Reduced vertical margin */
+  width: 100%;
+  
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  width: 100%;
+  max-width: 180px; /* Reduced max-width */
+  height: 45px; /* Reduced height */
+  background: #333; /* Softer black */
+  color: #fff;
+  border-radius: 25px; /* Rounded corners */
+  font-size: 1rem; /* Reduced font size */
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.submit:hover {
+  background-color: white; /* Changed to a more professional color */
+  color: #333; /* Softer black */
+}
+
+.divider {
+  margin: 20px 0;
+  font-size: 0.875rem; /* Reduced font size */
+  color: white; /* Softer black */
+  position: relative;
+  text-align: center;
+}
+
+.divider p {
+  color: white;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background-color: #ddd; /* Lighter color */
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.error {
+  color: #e74c3c; /* Red color */
+  font-size: 0.875rem; /* Reduced font size */
+  margin-top: 0.5rem;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.875rem; /* Reduced font size */
+  text-align: center;
+  color: #333; /* Softer black */
+}
+
+footer a {
+  color: white; /* Changed to a more professional blue */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.linknav {
+  text-decoration: none;
+}
+
+.login-footer {
+  margin-top: 20px;
+  font-size: 0.875rem; /* Adjust font size as needed */
+  text-align: center;
+  color: #333; /* Set the desired color */
+}
+
+.login-footer-link {
+  color: white; /* Set the desired color for the footer links */
+  text-decoration: none; /* Remove underline */
+  margin: 0 5px; /* Add some space around the links */
+}
+
+.login-footer-link:hover {
+  text-decoration: none; /* Underline on hover */
+}
+
+.login-footer-separator {
+  color: orangered; /* Set the desired color for the separator */
+  font-size: 1rem; /* Adjust size if needed */
+}
+
+.login-prompt {
+  color: #999; /* Change this to your desired color for the "Don't have an account?" text */
+  font-size: 0.875rem; /* Optional: Adjust font size if needed */
+}
+
+.login-link {
+  color: #007bff; /* Change this to your desired color for the "Sign Up" link */
+  font-weight: 700; /* Optional: Make the link bold */
+  text-decoration: none; /* Remove underline if desired */
+}
+
+.login-link:hover {
+  text-decoration: none; /* Add underline on hover for better user interaction */
+}

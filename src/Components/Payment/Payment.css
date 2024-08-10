@@ -1,0 +1,174 @@
+.Background-payment {
+    background-image: url("https://img.freepik.com/free-photo/payment-goods-by-credit-card-via-smartphone_1150-18760.jpg?ga=GA1.1.871880170.1722402286&semt=ais_hybrid");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container-payment {
+    margin-top: 140px;
+    margin-bottom: 100px;
+    margin-left: 400px;
+    margin-right: 510px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    max-height: 80%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.form-payment {
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.h1-payment {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.division-payment {
+    margin-bottom: 15px;
+}
+
+.label-payment {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.input-payment {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input-payment:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.button-payment {
+    padding: 12px 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-payment:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.button-payment:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.error, .success {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+/* UPI Payment Section */
+.upi-section {
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(0, 123, 255, 0.1);
+    margin-top: 20px;
+}
+
+.upi-section label {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.upi-section input {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    transition: border-color 0.3s;
+}
+
+.upi-section input:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.payment-method-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.payment-method-select {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.payment-method-option {
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    flex: 1;
+    text-align: center;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.payment-method-option:hover {
+    background-color: #FFFFFF;
+}
+
+.payment-method-option.selected {
+    border-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.payment-method-option.selected:hover {
+    background-color: rgba(0, 123, 255, 0.2);
+}

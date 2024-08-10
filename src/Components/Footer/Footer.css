@@ -1,0 +1,233 @@
+/* Footer.css */
+.footer {
+  background: linear-gradient(135deg, #242020, #1a1a1a);
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Align items vertically in the center */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  overflow: visible; /* Ensure contents are visible */
+}
+
+.footer-logo img {
+  max-width: 90px;
+  margin: 0 20px; /* Add space around the logo */
+  margin-bottom: 20px;
+}
+
+.footer-links, .footer-newsletter, .footer-social {
+  flex: 1; /* Allow each section to grow equally */
+  margin: 0 20px; /* Add space around each section */
+  text-align: center;
+  overflow: visible; /* Ensure contents are visible */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Add space between links */
+}
+
+.footer-links .footer-column {
+  flex: 1;
+ /* Ensure columns have a minimum width */
+  max-width: 800px; /* Ensure columns have a maximum width */
+  overflow: visible; /* Ensure contents are visible */
+  width: 370px;
+  row-gap: 200px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-left: 150px; /* Ensure this margin doesn't push content off screen */
+  overflow: visible; /* Ensure contents are visible */
+}
+
+.footer-column a {
+  color: #fff;
+  display: block;
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+  margin-left: 150px;
+}
+
+.footer-column a:hover {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+.footer-newsletter h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-newsletter form {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-newsletter input {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  flex: 2;
+}
+
+.footer-newsletter button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #f39c12;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex: 1;
+}
+
+.footer-newsletter button:hover {
+  background-color: #e67e22;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0px 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #f39c12;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo, .footer-links, .footer-newsletter, .footer-social {
+    margin: 10px 0;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column h3 {
+    margin-left: 0; /* Adjust margin to ensure text doesn't overflow */
+  }
+}
+
+
+.footer-column a {
+  color: #fff;
+  display: block;
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #f39c12;
+}
+
+.footer-newsletter h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-newsletter form {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-newsletter input {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  flex: 2;
+}
+
+.footer-newsletter button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #f39c12;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex: 1;
+}
+
+.footer-newsletter button:hover {
+  background-color: #e67e22;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0px 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #f39c12;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo, .footer-links, .footer-newsletter, .footer-social {
+    margin: 10px 0;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

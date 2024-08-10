@@ -1,0 +1,99 @@
+.readmore-back{
+    background-color: #FFFFFF;
+}.read img{
+    width: 1500px;
+    height: 600px;
+margin-left: 50px;
+margin-top: 5px;
+padding-bottom: 150px;
+   
+}
+
+.read h1 {
+    margin-top: 170px;
+    text-align: left;
+
+    padding-left: 20px;
+    color: #000000;
+}
+
+  
+.read ::after {
+    content: '';
+    display: block;
+    width: 95%;
+    height: 1.3px; /* Thickness of the line */
+    background-color: #1E4060; /* Color of the line */
+    position: absolute;
+    margin-top: 900px;
+    margin-left: 30px;
+    bottom: 0;
+    left: 0;
+  }
+
+.read p{
+    margin-left: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #1E4060;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    text-align: left;
+}
+
+
+.color { 
+    color: orangered;
+
+}
+
+.more h1 {
+    margin-left: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #1E4060;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+}
+
+.more p {
+    margin-left: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #1E4060;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+}
+
+/* Readmore.css */
+
+.read h1,
+.more h1 {
+    text-align: left;
+    line-height: 30px; /* Keep this as you have already specified */
+
+    margin-top: 20px; 
+}
+
+/* Remove margin/padding from p elements */
+.read p,
+.more p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Adjust the line-height for better readability */
+    text-align: left; /* Ensure text alignment is left for paragraphs */
+}
+
+
+
+/* Optional: Add some horizontal padding to the container */
+.read, .more {
+    margin: 0 20px;
+}
+
+
+/* Optional: Image styling */
+.read img {
+    width: 100%;
+    height: auto;
+}
